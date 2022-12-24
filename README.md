@@ -51,6 +51,7 @@ Switchの設定画面から下記へ
  設定 > コントローラーとセンサー > コントローラーの持ち方/順番を変える
 以下のコマンドを実行
 ```
+cd ./joycontrol-pluginloader
 sudo /home/pi/work/kinsaku-kun/venv/bin/joycontrol-pluginloader plugins/tests/PairingController.py
 ```
 スクリプトが走り始めたら，接続操作をしている証拠．
@@ -87,6 +88,7 @@ take a break!
 
 ## 9. 終わったら, venv環境をデアクティベート
 ```
+cd ../
 deactivate
 ```
 ラズパイを再起動すると，MACアドレスの設定はリセットされます．
