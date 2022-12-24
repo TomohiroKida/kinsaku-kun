@@ -52,7 +52,7 @@ Switchの設定画面から下記へ
 以下のコマンドを実行
 ```
 cd ./joycontrol-pluginloader
-sudo /home/pi/work/kinsaku-kun/venv/bin/joycontrol-pluginloader plugins/tests/PairingController.py
+sudo ~/kinsaku-kun/venv/bin/joycontrol-pluginloader plugins/tests/PairingController.py
 ```
 スクリプトが走り始めたら，接続操作をしている証拠．
 1, 2分かかる(1, 2分経ってもウンスンの場合はCtrl-Cして再度コマンドを実行)
@@ -73,7 +73,7 @@ Switchの設定画面から下記へ
 ```
 # ディレクトリパスは，あなたの環境に合わせましょう
 # XX:XX:XX:XX:XX:XXは，あなたのSwitchのMACアドレスにしましょう
-sudo /home/xx/xx/kinsaku-kun/venv/bin/joycontrol-pluginloader -r XX:XX:XX:XX:XX:XX plugins/tests/TestControllerButtons.py
+sudo ~/kinsaku-kun/venv/bin/joycontrol-pluginloader -r XX:XX:XX:XX:XX:XX plugins/tests/TestControllerButtons.py
 ```
 
 ## 8. Aボタンを押し続ける
@@ -82,7 +82,7 @@ sudo /home/xx/xx/kinsaku-kun/venv/bin/joycontrol-pluginloader -r XX:XX:XX:XX:XX:
 ```
 # ディレクトリパスは，あなたの環境に合わせましょう
 # XX:XX:XX:XX:XX:XXは，あなたのSwitchのMACアドレスにしましょう
-sudo /home/xx/xx/kinsaku-kun/venv/bin/joycontrol-pluginloader -r XX:XX:XX:XX:XX:XX ../ContinueButtonA.py
+sudo ~/kinsaku-kun/venv/bin/joycontrol-pluginloader -r XX:XX:XX:XX:XX:XX ../ContinueButtonA.py
 ```
 take a break!
 
@@ -92,3 +92,10 @@ cd ../
 deactivate
 ```
 ラズパイを再起動すると，MACアドレスの設定はリセットされます．
+
+## 10. 再度，スクリプトだけ実行したい
+mac_addr変数をあなたのSwitchのMACアドレスに変更
+以下を実行
+```
+./do.sh
+```
