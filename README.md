@@ -23,7 +23,7 @@ git clone --recursive https://github.com/Almtr/joycontrol-pluginloader.git
 ## 3. Pythonの仮想環境を作成し，アクティベート
 ```
 python3 -m venv venv
-source venv/bin/active
+source venv/bin/activate
 ```
 
 ## 4. Pythonのパッケージをインストール
