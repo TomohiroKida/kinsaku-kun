@@ -5,8 +5,8 @@ kinsaku-kun
 - Raspberrypi 4
 
 # 参考にしたサイト
-https://ponkichi.blog/rapsberry-switch-01/#st-toc-h-1
-https://github.com/Almtr/joycontrol-pluginloader/blob/master/README_ja.md
+- [https://ponkichi.blog/rapsberry-switch-01/#st-toc-h-1]
+- [https://github.com/Almtr/joycontrol-pluginloader/blob/master/README_ja.md]
 
 ## 1. Python3などをインストール
 ```
@@ -40,15 +40,15 @@ sudo hcitool -i hci0 cmd 0x04 0x009
 sudo hcitool -i hci0 cmd 0x3f 0x001 0x56 0x34 0x12 0xCB 0x58 0x94
 sudo systemctl restart bluetooth.service
 sudo vi /lib/systemd/system/bluetooth.service
-	# 変更前: ExecStart=/usr/libexec/bluetooth/bluetoothd
-	# 変更後: ExecStart=/usr/libexec/bluetooth/bluetoothd -C -P sap,input,avrcp
+	# 変更前: ExecStart=/usr/lib/bluetooth/bluetoothd
+	# 変更後: ExecStart=/usr/lib/bluetooth/bluetoothd -C -P sap,input,avrcp
 sudo systemctl daemon-reload
 sudo systemctl restart bluetooth.service
 ```
 
 ## 6. ラズパイをペアリング
-Switchの設定画面から下記へ
- 設定 > コントローラーとセンサー > コントローラーの持ち方/順番を変える
+- Switchの設定画面から下記へ
+- 設定 > コントローラーとセンサー > コントローラーの持ち方/順番を変える
 以下のコマンドを実行
 ```
 cd ./joycontrol-pluginloader
